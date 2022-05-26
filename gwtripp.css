@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: auto;
+    /* background-color: #f34f32; */
+    display: flex;
+    background-color: #f7f7f7;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.logo
+{
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: auto 0;
+}
+.navbar a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ff3abd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search
+{
+    display: flex;
+    margin: auto 0;
+}
+.search input
+{
+    padding: 0.8rem 1rem;
+    border-radius: 0.51rem;
+    border: none;
+    margin: auto;
+    margin-right: 0.5rem;
+    width: 15rem;
+    margin-top: 0.3rem;
+}
+.images
+{
+    margin: auto;
+}
+.images img
+{
+    padding: 0.4rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.menu-bar 
+{
+    margin: auto;
+    font-size: 3rem;
+    color: #444;
+    display: none;
+}
+.space
+{
+    width: 100%;
+    height: 20rem;
+}
+footer
+{
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    padding-bottom: 2rem;
+}
+.design
+{
+    display: flex;
+    justify-content: center;
+}
+.design p
+{
+    font-size: 3rem;
+    color: #fff;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.design p span
+{
+    color: #fd0000;
+}
+.target
+{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.target span
+{
+    margin: 0 1rem 0 0;
+    font-size: 1.5;
+    font-weight: bold;
+}
+.images_1
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3rem;
+}
+.sub_image1 img
+{
+    width: 20rem;
+    height: 25rem;   
+}
+.sub_image2 img
+{
+    width: 23rem;
+    height: 28rem;   
+}
+.sub_image3 img
+{
+    margin-top: 3rem;
+    width: 20rem;
+    height: 25rem;   
+}
+/* -------------media quaries---------------------- */
+@media(max-width:1200px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:642px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:536px)
+{
+    html{
+        font-size: 50%;
+    }
+    .menu-bar{
+        display: initial;
+    }
+    .logo
+    {
+        margin: auto;
+    }
+    .navbar 
+    {
+        display: none;
+        top: 15%;
+        position: absolute;
+        background: #f8f8f8;
+        min-width: 90%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 1rem;
+        -webkit-box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+       -moz-box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+       box-shadow: -1px 24px 30px -7px rgba(0,0,0,0.75);
+    }
+    .navbar a
+    {
+        display: block;
+        margin: 1rem 2rem;
+        padding: 0.5rem;
+        font-size: 3rem;
+        background-color: rgb(17, 17, 17,0.2);
+        border-radius: 1rem;
+        color: #ff3abd;
+        font-weight: bold;
+    }
+    .show
+    {
+        display: block;
+    }
+    .target
+    {
+        font-size: 3rem;
+    }
+    .design
+    {
+        font-size: 3rem;
+    }
+    .images_1
+    {
+        flex-direction: column;
+        padding: 3%;
+    }
+    .sub_image1 img
+    {
+        width: 100%;
+        height: 50rem;
+        border-radius: 3rem;
+    }
+    .sub_image2 img
+    {
+        margin-top: 3rem;
+        width: 100%;
+        height: 50rem;
+        border-radius: 3rem;
+    }
+    .sub_image3 img
+    {
+        width: 100%;
+        height: 50rem;
+        border-radius: 3rem;
+    }
+}
+@media(max-width:400px)
+{
+    html{
+        font-size: 25%;
+    }
+    .logo
+    {
+        font-size: 5rem;
+    }
+    .design
+    {
+        font-size: 10rem;
+    }
+    .navbar
+    {
+        top: 10%;
+    }
+}
